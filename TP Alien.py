@@ -37,3 +37,14 @@ q11={ (alien.Nom) for alien in BaseAliens if alien.Planete=='Euterpe' }
 
 ### Question 12 : Est-ce que tous les aliens ont un 'x' dans leur nom?
 q12=
+{ (alien.nom) for alien in BaseAliens if NomAliens=='x' }
+
+# Question 13
+
+q13={ (alien.nom,gardien.nom,agent.terminus) for alien in BaseAliens for gardien in BaseAliens for agent in BaseAliens if alien.NomAlien==x and gardien.NomVille=='Terminus' and gardien.NomGardians==x)
+
+# Question 14 Existe-t-il un alien masculin originaire de Trantor qui mange du Bortsch ou dont le gardien vient de Terminus ?
+
+q14={ (alien.sexe,alien.planete,miam.aliment,agent.ville) for alien in BaseAliens for miam in BaseAliens for agent in BaseAliens if alien.SexeAlien=='M' and alien.NomPlanete=='Trantor' and miam.Aliment=='Bortsch' and agent.NomVille='Terminus' )
+Fin de la discussion
+Écrivez un message...
